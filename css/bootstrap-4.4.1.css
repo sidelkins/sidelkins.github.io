@@ -10247,5 +10247,11 @@ a.text-dark:hover, a.text-dark:focus {
   background: #55ACEE;
   color: white;
 }
+.window {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+	
 }
 /*# sourceMappingURL=bootstrap.css.map */
