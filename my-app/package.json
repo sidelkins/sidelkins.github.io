@@ -1,6 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
+  "homepage": "https://sidelkins.github.io/my-app",
   "private": true,
   "dependencies": {
     "@chakra-ui/react": "^2.2.1",
@@ -13,6 +14,8 @@
     "react-scroll-motion": "^0.3.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
