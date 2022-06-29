@@ -5,11 +5,6 @@ import WIP from "../components/WIP";
 
 function Home() {
 
-    return(
-    <VStack p={5}>
-      <Header></Header>
-    </VStack>
-    )
 }
 
 export default Home;
