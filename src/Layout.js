@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 import { Outlet } from "react-router-dom"
-import { Container, Flex, HStack, VStack } from "@chakra-ui/react";
+import { Box, Container, Flex, HStack, VStack } from "@chakra-ui/react";
 import { useMediaQuery } from "@chakra-ui/react";
 
 function Layout() {
@@ -10,9 +10,11 @@ function Layout() {
   const [isNotSmallerScreen] = useMediaQuery("(min-width:600px");
 
   return (
-    <VStack>
+    <VStack p={5}>
       <Navbar />
-      <Outlet />
+      <VStack p={20}>
+        <Outlet />
+      </VStack>
       <Footer />
     </VStack>
   );

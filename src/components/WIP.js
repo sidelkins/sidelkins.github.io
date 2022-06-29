@@ -5,7 +5,7 @@ function WIP() {
 
     return (
         <Stack>
-            <Heading>
+            <Heading size='small'>
                 work in progress...
             </Heading>
         </Stack>
