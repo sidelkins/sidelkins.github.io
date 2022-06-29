@@ -17,10 +17,10 @@ function Navbar() {
     <Flex w="100%">
         <Heading
           ml="8" mt="2" size="md" fontWeight='semibold' color="cyan.400">sid elkins</Heading>
-          <Button ml="10" onClick={event => window.location.href='/'}>home</Button>
-          <Button ml="2" onClick={event => window.location.href='/about'}>about</Button>
-          <Button ml="2" onClick={event => window.location.href='/projects'}>projects</Button>
-          <Button ml="2" onClick={event => window.location.href='/resources'}>resources</Button>
+          <Link to="/"><Button ml="10" >home</Button></Link>
+          <Link to="/about"><Button ml="2">about</Button></Link>
+          <Link to="/projects"><Button ml="2">projects</Button></Link>
+          <Link to="/resources"><Button ml="2">resources</Button></Link>
 
         <Spacer></Spacer>
         <IconButton icon={<FaLinkedin />} isRound='true' onClick={event => window.location.href='https://linkedin.com/in/sidelkins'}></IconButton>
