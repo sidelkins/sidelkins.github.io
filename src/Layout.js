@@ -1,20 +1,19 @@
 import React from "react";
-import { useColorMode } from "@chakra-ui/color-mode";
-import { VStack } from "@chakra-ui/layout";
-import Header from "./components/Header";
-import WIP from "./components/WIP";
 import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
 import { Outlet } from "react-router-dom"
+import { Flex, HStack, VStack } from "@chakra-ui/react";
+import { useMediaQuery } from "@chakra-ui/react";
 
 function Layout() {
 
-    const { colorMode, toggleColorMode } = useColorMode();
-    const isDark = colorMode === "dark";
+  const [isNotSmallerScreen] = useMediaQuery("(min-width:600px");
 
   return (
     <>
-    <Navbar></Navbar>
-    <Outlet />
+      <Navbar />
+      <Outlet />
+      <Footer />
     </>
   );
 }

@@ -8,7 +8,6 @@ function Home() {
     return(
     <VStack p={5}>
       <Header></Header>
-      <WIP></WIP>
     </VStack>
     )
 }
