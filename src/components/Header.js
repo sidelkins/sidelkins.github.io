@@ -6,7 +6,6 @@ import { Stack,
     Box,
     Text 
 } from '@chakra-ui/layout';
-import '../styles/animations.css'
 import Sizer from './Sizer';
 
 function Header() {
@@ -22,7 +21,7 @@ function Header() {
              alignSelf="flex-start">
                  <Box className='jello-horizontal' mt={isNotSmallerScreen ? "0" : 16} align="flex-start">
                      <Text fontSize="7xl" fontWeight="semibold">hello, i'm</Text>
-                     <Text fontSize="9xl" fontWeight="semibold" bgGradient="linear(to-r, cyan.400, blue.500, purple.600)" bgClip='text'>sid elkins</Text>
+                     <Text fontSize="9xl" fontWeight="semibold" className='gradient-animation' bgClip='text'>sid elkins</Text>
                  </Box>
                  <Image className='jello-horizontal' alignSelf="center" mt={isNotSmallerScreen ? "0" : "12"}
                     mb={isNotSmallerScreen ? "0" : "12"} borderRadius='full'

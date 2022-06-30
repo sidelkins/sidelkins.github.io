@@ -173,16 +173,9 @@
     white-space: nowrap;
     overflow: hidden;
     border-right: 2px solid;
-    font-family: monospace;
     font-size: 2em;
   }
-  .center-screen {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-height: 100vh;
-  }
+ 
   @keyframes typing {
     from {
       width: 0
@@ -195,14 +188,23 @@
     }
   }
 
-  body {
-    background: linear-gradient(0.33turn, #f6a192, #ffd9df, #f6c492, #f6a192);
+  /* https://codepen.io/P1N2O/pen/pyBNzX */
+  .gradient-animation {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
-    animation: GradientBackground 12s ease infinite;
-}
+    animation: gradient 8s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
 
-@keyframes GradientBackground { 
-    0%   { background-position: 0%   50%; } 
-    50%  { background-position: 100% 50%; } 
-    100% { background-position: 0%   50%; } 
-}
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  

@@ -1,17 +1,20 @@
-import { useColorMode } from "@chakra-ui/color-mode";
 import { VStack,
+    HStack,
     Heading,
-    Code,
  } from "@chakra-ui/layout";
- import {
-    Breadcrumb, BreadcrumbItem, BreadcrumbLink
- } from "@chakra-ui/react"
  import "../styles/animations.css"
 
 function Home() {
     return(
     <VStack>
-            <Heading mt="8" fontSize={64} className="typing-effect">welcome...</Heading>
+        <HStack>
+        {/* <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-prompt" height="82" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <polyline points="5 7 10 12 5 17" />
+        <line x1="13" y1="17" x2="19" y2="17" />
+        </svg> */}
+        <Heading mt="8" fontSize={64} className="typing-effect">welcome...</Heading>
+        </HStack>
     </VStack>
     );
 }
