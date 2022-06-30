@@ -11,8 +11,6 @@ function Navbar() {
     const { colorMode, toggleColorMode } = useColorMode();
     const isDark = colorMode === "dark";
 
-    const pages = ['home','about','projects','resources']
-
     return(
     <Flex w="100%">
         <Heading

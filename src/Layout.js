@@ -15,7 +15,6 @@ function Layout() {
       <VStack p={20}>
         <Outlet />
       </VStack>
-      <Footer />
     </VStack>
   );
 }
