@@ -17,7 +17,7 @@ function App() {
       <VStack p={5}>
         <Outlet />
       </VStack>
-      <Footer></Footer>
+      {!isNotSmallerScreen && <Footer></Footer>}
     </VStack>
     </Container>
   );

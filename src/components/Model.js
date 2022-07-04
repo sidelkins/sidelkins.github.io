@@ -7,25 +7,20 @@ import { useGLTF } from '@react-three/drei'
 
 export default function Model({ ...props }) {
   const group = useRef()
-  const { nodes, materials } = useGLTF('/model.glb')
+  const { nodes, materials } = useGLTF('/Model.glb')
   return (
     <group ref={group} {...props} dispose={null}>
-      <mesh geometry={nodes['Node-Mesh'].geometry} material={materials.mat19} />
-      <mesh geometry={nodes['Node-Mesh_1'].geometry} material={materials.mat15} />
-      <mesh geometry={nodes['Node-Mesh_2'].geometry} material={materials.mat20} />
-      <mesh geometry={nodes['Node-Mesh_3'].geometry} material={materials.mat13} />
-      <mesh geometry={nodes['Node-Mesh_4'].geometry} material={materials.mat4} />
-      <mesh geometry={nodes['Node-Mesh_5'].geometry} material={materials.mat9} />
-      <mesh geometry={nodes['Node-Mesh_6'].geometry} material={materials.mat14} />
-      <mesh geometry={nodes['Node-Mesh_7'].geometry} material={materials.mat8} />
+      <mesh geometry={nodes['Node-Mesh'].geometry} material={materials.mat21} />
+      <mesh geometry={nodes['Node-Mesh_1'].geometry} material={materials.mat8} />
+      <mesh geometry={nodes['Node-Mesh_2'].geometry} material={materials.mat19} />
+      <mesh geometry={nodes['Node-Mesh_3'].geometry} material={materials.mat18} />
+      <mesh geometry={nodes['Node-Mesh_4'].geometry} material={materials.mat15} />
+      <mesh geometry={nodes['Node-Mesh_5'].geometry} material={materials.mat17} />
+      <mesh geometry={nodes['Node-Mesh_6'].geometry} material={materials.mat22} />
+      <mesh geometry={nodes['Node-Mesh_7'].geometry} material={materials.mat25} />
       <mesh geometry={nodes['Node-Mesh_8'].geometry} material={materials.mat3} />
-      <mesh geometry={nodes['Node-Mesh_9'].geometry} material={materials.mat5} />
-      <mesh geometry={nodes['Node-Mesh_10'].geometry} material={materials.mat18} />
-      <mesh geometry={nodes['Node-Mesh_11'].geometry} material={materials.mat21} />
-      <mesh geometry={nodes['Node-Mesh_12'].geometry} material={materials.mat22} />
-      <mesh geometry={nodes['Node-Mesh_13'].geometry} material={materials.mat12} />
     </group>
   )
 }
 
-useGLTF.preload('/model.glb')
+useGLTF.preload('/Model.glb')
