@@ -1,6 +1,11 @@
 .root {
   font-family: fantasy;
+  padding-bottom:60px;
  }
+
+ /* .body {
+  background-color: 
+ } */
 
 .div {
   position: absolute;
@@ -8,6 +13,7 @@
   right: 0;
   bottom: 0;
   left: 0;
+  background-color: black;
 }
 
 html, body {

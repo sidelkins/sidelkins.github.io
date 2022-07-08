@@ -3,23 +3,23 @@ import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
 import { Outlet } from "react-router-dom"
 import { VStack } from "@chakra-ui/react";
-import { useMediaQuery } from "@chakra-ui/react";
-import { Container } from "@chakra-ui/react";
+import { Breakpoint, BreakpointProvider } from 'react-socks';
+
 
 function App() {
 
-  const [isNotSmallerScreen] = useMediaQuery("(min-width:600px");
-
   return (
-    <Container maxWidth={isNotSmallerScreen ? "100%" : 390} maxHeight={isNotSmallerScreen ? "100%" : 844}>
+    <BreakpointProvider>
       <VStack p={5}>
-      <Navbar />
-      <VStack p={5}>
-        <Outlet />
+        <Navbar />
+        <VStack p={5} className="body">
+          <Outlet />
+        </VStack>
+        <Breakpoint medium down>
+        <Footer></Footer>
+        </Breakpoint>
       </VStack>
-      {!isNotSmallerScreen && <Footer></Footer>}
-    </VStack>
-    </Container>
+    </BreakpointProvider>
   );
 }
 
