@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "node ./gh-pages.js"
+    "deploy": "node ./gh-pages.cjs"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^1.0.1",
