@@ -1,1 +1,0 @@
-Portfolio Website, built with Svelte. Resources used: https://github.com/RosaCodes2021/Personal-Website-Template
