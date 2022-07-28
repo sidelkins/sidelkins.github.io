@@ -1,24 +1,23 @@
-<canvas id="banner"></canvas>
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="text-align: center; color: white; text-shadow: 4px 4px black;">sid elkins</h1>
+  </div>
+</div>
 <div class="main-content" style="text-align: center; width: 100%; position: absolute;">
-      <div style="padding-top: 30px;">
-        <h1 style="padding-top: 230px; color: white; text-shadow: 4px 4px black;">sid elkins</h1>
-        <p style="padding-top: 25px; color: white;" id="app"></p>
-      </div>
-
       <h2 style="padding-bottom: 10px; padding-top: 10px;">Introduction</h2>
 
       <!-- Introduction -->
-      <div class="flex-container-reverse" style="padding-bottom: 50px; padding-top: 20px;">
+      <div class="flex-container-reverse-card" style="padding-bottom: 50px; padding-top: 20px;">
         <div class="big-container-left" style="">
-          <p class="time-text"></p>
-          <p style="padding-bottom: 5px;"></p>
+          <p class="time-text">Hello</p>
+          <p style="padding-bottom: 5px;">text text text</p>
         </div>
         <div class="small-container-right">
           <img src="src\assets\placeholder-image.png" class="title-image">
         </div>
       </div>
 
-      <h2 style="padding-bottom: 20px">My Current Projects</h2>
+      <h2 style="padding-top: 50px; padding-bottom: 20px">My Current Projects</h2>
 
       <!-- Current Project #1 -->
       <div class="flex-container-reverse" style="padding-bottom: 50px; padding-top: 40px;">
@@ -64,8 +63,8 @@
       <!-- Experience #3 #1 -->
       <div class="flex-container-reverse" style="padding-bottom: 50px; padding-top: 40px;">
         <div class="big-container-left">
-          <h3>Porttitor massa</h3>
-          <p class="time-text">May 2020 - TBD</p> <!--Add your own dates-->
+          <h3>Software Development Intern, Motion Industries</h3>
+          <p class="time-text">May 2022 - August 2022</p> <!--Add your own dates-->
           <p>Enim praesent elementum facilisis leo vel fringilla est ullamcorper eget. Velit laoreet id donec ultrices. Libero volutpat sed cras ornare. Porttitor leo a diam sollicitudin tempor id eu. Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Diam vel quam elementum pulvinar etiam. Porttitor rhoncus dolor purus non enim. Quam id leo in vitae. </p>
           <button style="padding-bottom: 5px;" type="button" class="btn btn-outline-success" id="btn1">See more</button>
         </div>

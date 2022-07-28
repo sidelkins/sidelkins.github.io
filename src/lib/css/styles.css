@@ -1,15 +1,24 @@
-#banner {
-  position: absolute;
-  width: 100%;
-  height: 380px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-image: url('/src/assets/lowpolyicecave.jpg');
-  background-size: contain;
+body{
+  background: #505255;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/src/assets/lowpolyicecave.jpg');
+  height: 300px;
+  background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  border-radius: 1.5%;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
 
 .main-content {
@@ -28,21 +37,21 @@ h1 {
   font-family: 'Rubik', sans-serif;
   font-size: 3.0rem;
   font-weight: 700;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 h2 {
   font-family: 'Rubik', sans-serif;
   font-size: 2.0rem;
   font-weight: 500;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 h3 {
   font-family: 'Rubik', sans-serif;
   font-size: 1.8rem;
   font-weight: 500;
-  color: black;
+  color: white;
   padding-bottom: 10px;
 }
 
@@ -50,14 +59,14 @@ p {
   font-family: 'Rubik', sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
-  color: black;
+  color: white;
 }
 
 .time-text {
   font-family: 'Rubik', sans-serif;
   font-size: 1.2rem;
   font-weight: 200;
-  color: black;
+  color: white;
 }
 
 .header-text {
@@ -136,6 +145,20 @@ ul {
   flex-wrap: wrap;
   font-size: 30px;
   text-align: center;
+}
+
+.flex-container-reverse-card {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  text-align: center;
+  background-color: #797c80;;
+  border-radius: 4%;
+  align-self: center;
+  /* visibility: visible;
+  opacity: 1;
+  transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); 
+  transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0s; */
 }
 
 .big-container-left {
