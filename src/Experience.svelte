@@ -20,7 +20,7 @@ import { modal } from './lib/modal/stores.js';
         </Modal>
       </div>
       <div class="small-container-right" style="">
-        <img src="src/assets/motion-industries.png" style="align-self:center; justify-content: center; width: 150px;">
+        <img src="https://raw.githubusercontent.com/sidelkins/sidelkins.github.io/svelte/src/assets/motion-industries.png" style="align-self:center; justify-content: center; width: 150px;">
         <div class="toolbox">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" class="icon-image">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" class="icon-image"/>
@@ -42,7 +42,7 @@ import { modal } from './lib/modal/stores.js';
         </p>
       </div>
       <div class="small-container-right" style="">
-        <img src="src/assets/sga-logo.png" style="align-self:center; justify-content: center; width: 150px;">
+        <img src="https://raw.githubusercontent.com/sidelkins/sidelkins.github.io/svelte/src/assets/sga-logo.png" style="align-self:center; justify-content: center; width: 150px;">
         <div class="toolbox">
 
         </div>
@@ -63,7 +63,7 @@ import { modal } from './lib/modal/stores.js';
         </p>
       </div>
       <div class="small-container-right" style="">
-        <img src="src/assets/ifc-logo.png" style="align-self:center; justify-content: center; width: 150px;">
+        <img src="https://raw.githubusercontent.com/sidelkins/sidelkins.github.io/svelte/src/assets/ifc-logo.png" style="align-self:center; justify-content: center; width: 150px;">
         <div class="toolbox">
           
         </div>

@@ -1,10 +1,7 @@
 <script>
   import Hero from "./hero.svelte";
   import About from "./lib/About.svelte";
-  import Modal from './lib/modal/Modal.svelte';
-	import { modal } from './lib/modal/stores.js';
-  import PopupLongBtn from "./lib/modal/PopupLongBtn.svelte";
-import Experience from "./Experience.svelte";
+  import Experience from "./Experience.svelte";
 </script>
 
 <!-- Hero Header -->
