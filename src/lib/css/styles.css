@@ -148,11 +148,6 @@ p {
 }
 
 .rounded-corners {
-  border-radius: 20px;
-  height: 300px;
-}
-
-.title-image {
   border-radius: 8%;
 }
 
@@ -170,6 +165,10 @@ p {
 
 .offset-outline {
   box-shadow: 1rem 1rem 0 0 var(--light-navy), 1rem 1rem 0 3px #64ffda;
+}
+
+.offset-outline:hover {
+  box-shadow: cubic-bezier(0.645,0.045,0.355,1);;
 }
 
 .modal {
@@ -227,20 +226,33 @@ ul {
   text-align: center;
 }
 
-.flex-container-card {
+.card {
   display: flex;
-  text-align: center;
+  flex-direction: column;
   border-radius: 4px;
   background-color: var(--light-navy);
-  width: 75%;
-  align-self: center;
+  width: 80%;
 }
 
 .flex-container-card-image {
-  background-color: #64ffda;
-  border-radius: 4px;
-  height: 100%;
-  width: 100%;
+  width: clamp(135px, 35vw, 250px);
+  padding-bottom: 0.666796875%;
+}
+
+.flex-container-card-image:before {
+  content: '';
+  display: block;
+  position: absolute;
+  transition: var(--transition);
+}
+
+.flex-container-card-image:after {
+  content: '';
+  display: block;
+  border: 2px solid var(--green);
+  top: 20px;
+  left: 20px;
+  z-index: 1;
 }
 
 .big-container-left {
@@ -257,8 +269,6 @@ ul {
   flex-direction: column;
   flex: 30%;
   padding: 10px;
-  text-align: right;
-  background-color: inherit;
 }
 
 .big-container-right {
@@ -355,6 +365,11 @@ ul {
     width: 60%;
   }
 
+  .card {
+    flex-direction: row;
+    width: 100%;
+  }
+
   .flex-container-reverse {
     flex-direction: column-reverse;
   }
@@ -365,6 +380,10 @@ ul {
 
   .small-container-right {
     text-align: center;
+  }
+
+  .toolbox {
+    align-self: flex-start;
   }
 
   .big-container-right, .small-container-left {

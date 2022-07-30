@@ -42,7 +42,7 @@
     }
 
     .page-button {
-        font-size: clamp(10px, 2vw, 40px);
+        font-size: clamp(10px, 5vw, 20px);
         /* -webkit-transition: color 0.2s; */
         transition: color 0.15s;
         border-bottom: solid 2px;

@@ -1,115 +1,55 @@
 <script>
   import Hero from "./hero.svelte";
+  import About from "./lib/About.svelte";
   import Modal from './lib/modal/Modal.svelte';
 	import { modal } from './lib/modal/stores.js';
   import PopupLongBtn from "./lib/modal/PopupLongBtn.svelte";
+import Experience from "./Experience.svelte";
 </script>
 
 <!-- Hero Header -->
 <Hero />
 
 <div class="main-content" style="text-align: center; width: 100%; position: absolute;">
-  <section>
-    <!-- About -->
-  <a id="about">
-    <h1>About</h1>
-    <!-- Introduction -->
-    <h2 style="padding-bottom: 10px; padding-top: 10px;">Introduction</h2>
-  </a>
-    <div class="flex-container-card" style="padding-top: 10px;">
-      <div class="big-container-left" style="">
-        <p style="font-size: 2em;">Hello, I'm Sid Elkins.</p>
-        <p style="font-size: 1.1rem;">I'm a student at The University of Alabama studying Management Information Systems. Scroll down to learn more about me!</p>
-        <h2 style="font-size: 0.8rem;">Note: This is a work-in-progress, and not everything is guranteed to work as intended...</h2>
-      </div>
-      <div class="small-container-right flex-container-card-image">
-        <img style="width: 80%;" src="https://raw.githubusercontent.com/sidelkins/sidelkins.github.io/635e1e370495c123f283bd244f3e8c6594013e4a/src/assets/headshot.jpg" class="title-image offset-outline" alt="headshot">
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <!-- Experience -->
-  <a id="experience">
-    <h1>Experience</h1>
-  </a>
-    <div class="flex-container-card" style="padding-top: 10px;">
-      <div class="big-container-left" style="">
-        <h3 style="font-size: 1.25rem;">Software Development Intern</h3>
-        <h2 style="font-size: 1.25rem;">Motion Industries, May 2022 - Aug 2022</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-        <Modal show={$modal}>
-          <PopupLongBtn />
-        </Modal>
-      </div>
-      <div class="small-container-right" style="">
-        <img src="src/assets/motion-industries.png" style="align-self:center; justify-content: center; width: 150px;">
-        <div class="toolbox">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" class="icon-image">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" class="icon-image"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="icon-image"/>
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" class="icon-image" />
-        </div>
-      </div>
-      <div>
-
-      </div>
-    </div>
-
-    <div class="flex-container-card" style="padding-top: 10px;">
-      <div class="big-container-left" style="">
-        <h3 style="font-size: 1.25rem;">Director of IT & Webmaster</h3>
-        <h2 style="font-size: 0.9rem;">The University of Alabama SGA, May 2022 - Aug 2022</h2>
-        <p>Update and maintain Student Government Association website while abiding by WCAG 2.0 guidelines
-          <br>
-          <br>
-          Provide University of Alabama’s student body with academic, legislative, and programming based
-          resources
-        </p>
-      </div>
-      <div class="small-container-right" style="">
-        <img src="src/assets/sga-logo.png" style="align-self:center; justify-content: center; width: 150px;">
-        <div class="toolbox">
-
-        </div>
-      </div>
-    </div>
-
-    <div class="flex-container-card" style="padding-top: 10px;">
-      <div class="big-container-left" style="">
-        <h3 style="font-size: 1.25rem;">Director of Public Relations</h3>
-        <h2 style="font-size: 0.9rem;">The University of Alabama IFC, May 2022 - Aug 2022</h2>
-        <p>Work alongside executive members to develop new initiatives
-          <br>
-          <br>
-          Deliver announcements of recruitment schedules and contact information through social media
-          <br>
-          <br>
-          Organize and advertise philanthropic events to improve the Tuscaloosa area
-        </p>
-      </div>
-      <div class="small-container-right" style="">
-        <img src="src/assets/sga-logo.png" style="align-self:center; justify-content: center; width: 150px;">
-        <div class="toolbox">
-          
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <!-- Projects -->
-  <a id="projects">
-    <h1>Projects</h1>
-  </a>
-    <div class="flex-container-card" style="padding-top: 10px;">
-      <div class="big-container-left" style="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-      </div>
-      <div class="small-container-right flex-container-card-image">
-        <img src="https://raw.githubusercontent.com/sidelkins/sidelkins.github.io/4cec8bed6db2903c5888a45b7a80b58358ab0d88/src/assets/placeholder-image.png" class="title-image" alt="">
-      </div>
-    </div>
-  </section>
+  
+  <About />
+  <Experience />
+  <!-- <Projects /> -->
+  <!-- <Contact /> -->
 
 </div>
+
+<style>
+  h1 {
+  font-family: 'Rubik', sans-serif;
+  font-size: clamp(1rem, 8vw, 3rem);
+  font-weight: 700;
+  color: var(--lightest-slate);
+  }
+
+  h2 {
+  font-family: 'Rubik', sans-serif;
+  font-size: clamp(0.75rem, 4vw, 2rem); 
+  font-weight: 500;
+  color: var(--slate)
+}
+
+  h3 {
+  font-family: 'Rubik', sans-serif;
+  font-size: clamp(0.5rem, 2.5vw, 1rem); 
+  font-weight: 500;
+  color: white;
+  padding-bottom: 10px;
+}
+
+p {
+  font-family: 'Rubik', sans-serif;
+  font-size: clamp(0.5rem, 2vw, 9rem); 
+  font-weight: 400;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+</style>
